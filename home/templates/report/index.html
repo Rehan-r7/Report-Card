@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block start %}
+{% load static %}
+<!-- Style start -->
+    <style>
+        
+        h2,p{
+            text-align: center;
+            color: #E85A4F;
+            margin-top: 10%;
+        }
+
+        div.container{
+            display: flex;
+            margin-top: 5%;
+            
+            height: 60vh;
+            width: 90%;
+            padding: 0px;
+            border-radius: 25px;
+            background-color: #D8C3A5;
+
+        }
+        img{
+            align-self:center;
+            height: 100%;
+            width: 100%;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+
+        }
+        div.left{
+            width: 50%;
+            height: 100%;
+
+        }
+        div.right{
+          
+            width: 50%;
+            height: 100%;
+        }
+
+        button{
+            margin-top: 0%;
+            margin-left: 43%;
+        }
+    </style>
+<!-- Style end -->
+
+
+    <div class="container">
+        <div class="left">
+            
+            <h2>WELCOME TO THE REPORT <br> CARD PORTAL</h2>
+            <p>Click the below button to check the result</p>
+            <a href="/students/" target="_blank"><button class="btn btn-success"> Click Me! </button></a>
+        </div>
+        <div class="right">
+            
+            <img src=" {% static 'card_study.jpg' %}" alt="">
+        
+        </div>
+    </div>
+
+{% endblock %}
